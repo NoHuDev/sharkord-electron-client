@@ -1,0 +1,37 @@
+appId: io.github.sharkord.desktop
+productName: Sharkord Desktop
+artifactName: "${productName}-${version}-${os}-${arch}.${ext}"
+
+directories:
+  output: release
+
+files:
+  - dist/**/*
+  - package.json
+
+extraResources:
+  - from: assets/icon_on.png
+    to: icon_on.png
+  - from: assets/icon_off.png
+    to: icon_off.png
+
+extraMetadata:
+  main: dist/main/main.js
+
+asar: true
+
+linux:
+  category: Network
+  maintainer: Sharkord Contributors
+  target:
+    - target: AppImage
+    - target: deb
+
+win:
+  target:
+    - target: nsis
+    - target: portable
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true

@@ -1,0 +1,31 @@
+{
+  "name": "sharkord-electron-client",
+  "version": "0.5.2",
+  "description": "Sharkord Desktop Client (Electron Wrapper)",
+  "homepage": "https://github.com/sharkord/sharkord",
+  "author": {
+    "name": "NoHuDev",
+    "email": "-"
+  },
+  "main": "dist/main/main.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20",
+    "npm": ">=10"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "npm run build && electron .",
+    "start": "electron .",
+    "dist": "npm run build && electron-builder",
+    "dist:linux": "npm run build && electron-builder --linux AppImage deb",
+    "dist:win": "npm run build && electron-builder --win nsis portable",
+    "dist:dir": "npm run build && electron-builder --dir"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "electron": "^36.0.0",
+    "electron-builder": "^25.1.8",
+    "typescript": "^5.8.2"
+  }
+}
