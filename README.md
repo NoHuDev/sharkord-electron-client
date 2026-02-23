@@ -1,4 +1,4 @@
-# Sharkord Desktop
+# Sharkord Electron Client
 
 > ⚠️ **Note:** This project was largely built with the help of AI (GitHub Copilot / Claude) and is **unfinished**. Code quality, architecture, and feature coverage do not reflect a fully mature project. Use at your own risk.
 
