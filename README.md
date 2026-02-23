@@ -1,6 +1,6 @@
 # Sharkord Desktop
 
-> **Note:** This project was largely built with the help of AI (GitHub Copilot / Claude) and is **unfinished**. Code quality, architecture, and feature coverage do not reflect a fully mature project. Use at your own risk.
+> ⚠️ **Note:** This project was largely built with the help of AI (GitHub Copilot / Claude) and is **unfinished**. Code quality, architecture, and feature coverage do not reflect a fully mature project. Use at your own risk.
 
 An Electron-based desktop client for [Sharkord](https://github.com/sharkord/sharkord) – a self-hosted communication platform. The client loads the Sharkord web app inside a native window and extends it with desktop-specific features.
 
@@ -21,9 +21,7 @@ An Electron-based desktop client for [Sharkord](https://github.com/sharkord/shar
 
 - Node.js >= 20
 - npm >= 10
-
-Additionally on Linux:
-- `pipewire` and `xdg-desktop-portal` (+ an appropriate backend such as `xdg-desktop-portal-gnome` or `-kde`)
+  
 
 ## Installation & Getting Started
 
@@ -51,7 +49,9 @@ Build artifacts are placed in `release/`.
 
 ## Configuration
 
-On launch a setup window is shown where you can enter the server URL, mute hotkey, and optional Basic Auth credentials. These settings are saved to `userData/config.json`:
+On launch a setup window is shown where you can enter the server URL, mute hotkey, and optional Basic Auth credentials. These settings are saved to 
+- Windows: `%APPDATA%/Sharkord Desktop/config.json`
+- Linux: `~/.config/sharkord-desktop/config.json`
 
 ```json
 {
