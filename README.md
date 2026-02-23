@@ -15,7 +15,7 @@ An Electron-based desktop client for [Sharkord](https://github.com/sharkord/shar
 | Screen share with audio | ❌ planned | ❌ planned (difficult…) |
 | Basic Auth support | ✅ | ✅ |
 
-**Planned:** Screen share with audio – when sharing a window, capture only that window's audio; when sharing the entire screen, capture system audio excluding the client's own output (see [docs/screen-share-audio-plan.md](docs/screen-share-audio-plan.md)).
+**Planned:** Screen share with audio – when sharing a window, capture only that window's audio; when sharing the entire screen, capture system audio excluding the client's own output.
 
 ## Prerequisites
 
@@ -26,7 +26,7 @@ An Electron-based desktop client for [Sharkord](https://github.com/sharkord/shar
 ## Installation & Getting Started
 
 ```bash
-git clone https://github.com/sharkord/sharkord-electron-client.git
+git clone https://github.com/nohudev/sharkord-electron-client.git
 cd sharkord-electron-client
 npm install
 npm run dev
